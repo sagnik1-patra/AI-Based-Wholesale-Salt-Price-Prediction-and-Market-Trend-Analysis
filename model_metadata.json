@@ -1,0 +1,28 @@
+{
+    "project": "AI-Based Wholesale Salt Price Prediction and Market Trend Analysis",
+    "original_records": 37588,
+    "missing_price_records": 24680,
+    "valid_records": 12908,
+    "model_ready_records": 12713,
+    "training_records": 10468,
+    "testing_records": 2245,
+    "date_range": {
+        "start": "1999-07-07",
+        "end": "2010-12-01"
+    },
+    "random_forest_metrics": {
+        "MAE": 7.422223510215374,
+        "MSE": 495.7811021992524,
+        "RMSE": 22.266142508284915,
+        "R2": 0.9756438333368321
+    },
+    "lstm_metrics": {
+        "MAE": 10.570894379817563,
+        "MSE": 687.1704061130359,
+        "RMSE": 26.213935341970995,
+        "R2": 0.966241478622234
+    },
+    "best_model": "Random Forest",
+    "forecast_weeks": 12,
+    "forecast_note": "Recursive forecasts from each market's last available historical observation. Not current-market price estimates."
+}

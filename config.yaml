@@ -1,0 +1,28 @@
+project_name: AI-Based Wholesale Salt Price Prediction and Market Trend Analysis
+dataset: C:\Users\sagni\Downloads\AI-Based Wholesale Salt Price Prediction and Market
+  Trend Analysis\weekly_wholesale_price_salt_loose_upto-2012.csv
+target: salt_l
+random_seed: 42
+lookback: 6
+future_weeks: 12
+test_split: Chronological 80/20 by date
+features:
+- year
+- month
+- week
+- quarter
+- days_since_previous
+- lag_1
+- lag_2
+- lag_3
+- lag_4
+- lag_5
+- lag_6
+- zone
+- centre
+models:
+- Random Forest
+- LSTM
+best_model: Random Forest
+output_directory: C:\Users\sagni\Downloads\AI-Based Wholesale Salt Price Prediction
+  and Market Trend Analysis

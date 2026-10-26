@@ -1,0 +1,36 @@
+project: AI-Based Wholesale Salt Price Prediction and Market Trend Analysis
+algorithm: Artificial Immune System
+ais_variant: Clonal Selection
+dataset: C:\Users\sagni\Downloads\AI-Based Wholesale Salt Price Prediction and Market
+  Trend Analysis\weekly_wholesale_price_salt_loose_upto-2012.csv
+target: salt_l
+lookback: 6
+future_weeks: 12
+population: 8
+generations: 6
+clones_per_elite: 3
+mutation_rate: 0.25
+best_parameters:
+  n_estimators: 162
+  max_depth: 13
+  min_samples_split: 8
+  min_samples_leaf: 4
+  max_features: 0.9560589933091611
+validation_rmse: 36.416299936512885
+best_test_model: AIS Configured NN
+features:
+- year
+- month
+- week
+- quarter
+- days_since_previous
+- lag_1
+- lag_2
+- lag_3
+- lag_4
+- lag_5
+- lag_6
+- zone
+- centre
+output_directory: C:\Users\sagni\Downloads\AI-Based Wholesale Salt Price Prediction
+  and Market Trend Analysis

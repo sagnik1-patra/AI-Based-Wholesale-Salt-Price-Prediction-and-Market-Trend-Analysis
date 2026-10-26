@@ -1,0 +1,41 @@
+{
+    "project_name": "AI-Based Wholesale Salt Price Prediction and Market Trend Analysis",
+    "algorithm": "AIS Clonal Selection",
+    "original_rows": 37588,
+    "missing_price_rows": 24680,
+    "valid_rows": 12908,
+    "model_ready_rows": 12713,
+    "train_rows": 8313,
+    "validation_rows": 2155,
+    "test_rows": 2245,
+    "test_start_date": "2008-09-10",
+    "ais_settings": {
+        "population": 8,
+        "generations": 6,
+        "clones_per_elite": 3,
+        "mutation_rate": 0.25
+    },
+    "best_parameters": {
+        "n_estimators": 162,
+        "max_depth": 13,
+        "min_samples_split": 8,
+        "min_samples_leaf": 4,
+        "max_features": 0.9560589933091611
+    },
+    "best_validation_rmse": 36.416299936512885,
+    "random_forest_metrics": {
+        "MAE": 8.829544149385107,
+        "MSE": 555.3137172969633,
+        "RMSE": 23.56509531695052,
+        "R2": 0.9727191831458869
+    },
+    "neural_network_metrics": {
+        "MAE": 12.859637870873534,
+        "MSE": 504.4327735614349,
+        "RMSE": 22.459580885702984,
+        "R2": 0.975218803926317
+    },
+    "best_test_model": "AIS Configured NN",
+    "forecast_weeks": 12,
+    "forecast_note": "Forecasts begin after the last historical observation for each market."
+}
